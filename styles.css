@@ -1,0 +1,26 @@
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.normal {
+  visibility: visible;
+  background-color: red;
+}
+
+.animated {
+  background-color: blue;
+}
+
+.hidden {
+  background-color: blueviolet;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+}
