@@ -7,7 +7,6 @@ export class Progress {
   constructor(id, parent, state = "normal", value = 0) {
     this.progressState = new ProgressState(state, value);
     this.progressElement = new ProgressElement(id, parent, state, value);
-    this.errorMessage = "";
   }
 
   updateProgressValue(value) {
