@@ -20,6 +20,12 @@ body {
   font-size: 16px;
 }
 
+input[type="text"] {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
 .main {
   padding: 20px;
   display: flex;
@@ -82,18 +88,13 @@ body {
   margin: 0;
 }
 
-input[type="text"] {
-  outline: none;
-}
-
-.text-input {
+.text-input.text-input {
   width: 45px;
   height: 28px;
   border-radius: 28px;
   border: 1.5px solid black;
   font-family: "GT Eesti Pro", sans-serif;
   font-weight: 400;
-  padding: 0 10px;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 16px;
