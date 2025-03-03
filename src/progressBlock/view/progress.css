@@ -1,0 +1,33 @@
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, white 82%, transparent 80% 100%),
+      conic-gradient(
+        var(--progress-primary-color) var(--value),
+        var(--progress-secondary-color) 0
+      );
+  }
+  
+  .normal {
+    visibility: visible;
+  }
+  
+  @keyframes rotateAnim {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animated {
+    animation: rotateAnim 2s ease 0s infinite normal forwards;
+  }
+  
+  .hidden {
+    visibility: hidden;
+  }
