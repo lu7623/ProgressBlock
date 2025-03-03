@@ -1,4 +1,4 @@
-import { MAX_VALUE, MIN_VALUE, STATES } from "../model/constants.js";
+import { MAX_VALUE, MIN_VALUE, STATES } from "../model/constants";
 
 export const isValidValue = (value) => {
   return (

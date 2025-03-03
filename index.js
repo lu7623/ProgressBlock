@@ -1,6 +1,6 @@
-import { Progress } from "./src/progressBlock/controllerApi/api.js";
-import { isValidValue } from "./src/progressBlock/controllerApi/utils.js";
-import { STATES } from "./src/progressBlock/model/constants.js";
+import { Progress } from "./src/progressBlock";
+import { isValidValue } from "./src/progressBlock/controllerApi/utils";
+import { STATES } from "./src/progressBlock/model/constants";
 
 const progress = new Progress("progress", "root", "normal", 75);
 
@@ -11,9 +11,13 @@ const hideInput = document.getElementById("hide");
 const errorMessage = document.querySelector(".error-message");
 
 valueInput.addEventListener("input", (e) => {
-  if (!isValidValue(e.target.value)) {
+  if (!isValidValue(Number(e.target.value))) {
+    errorMessage.classList.remove("hidden");
+    valueInput.classList.add("error");
+  } else {
     progress.updateProgressValue(Number(e.target.value));
-    errorMessage.innerHTML = progress.errorMessage;
+    errorMessage.classList.add("hidden");
+    valueInput.classList.remove("error");
   }
 });
 

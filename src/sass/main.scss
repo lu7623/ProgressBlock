@@ -24,7 +24,6 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  width: 100vw;
 }
 
 .circle {
@@ -61,8 +60,6 @@ body {
 }
 
 .form-container {
-  height: 230px;
-  width: 230px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,8 +68,10 @@ body {
 .controls {
   display: flex;
   flex-direction: column;
-  height: 110px;
+  gap: 12px;
+  margin: 36px 0;
   justify-content: space-between;
+  min-width: 140px;
 }
 
 .control {
@@ -168,4 +167,18 @@ input[type="text"] {
 
 .toggle-button:checked {
   background-color: var(--progress-primary-color);
+}
+
+.toggle-button:disabled {
+  cursor: auto;
+}
+
+.error-message {
+  font-size: 12px;
+}
+
+.text-input:active.error,
+.text-input:focus.error,
+.text-input.error {
+  border: 1.5px solid red;
 }

@@ -1,4 +1,4 @@
-import { STATES } from "../model/constants.js";
+import { STATES } from "../model/constants";
 
 export class ProgressElement {
   constructor(id, parent, state, value) {

@@ -21,8 +21,8 @@ const progress = new Progress(id, parent_id, initial_state, initial_value);
 Где параметры конструктора:   
 `id` - id блока на странице;    
 `parent_id` - id контейнера, в который будет отрендерен блок (по дефолту body);   
-`initial_state` - начальное состояние блока - одно из значений `"normal" | "animated" | "hidden"`;    
-`initial_value` - начальное значение value (целое число от 0 до 100). 
+`initial_state` - начальное состояние блока - одно из значений `"normal" | "animated" | "hidden"` (по дефолту `"normal"`);    
+`initial_value` - начальное значение value - целое число от 0 до 100 (по дефолту 0). 
 
 Методы:
 ```
