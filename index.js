@@ -2,7 +2,7 @@ import { Progress } from "./src/controllerApi/api.js";
 import { isValidValue } from "./src/controllerApi/utils.js";
 import { STATES } from "./src/model/constants.js";
 
-const progress = new Progress("progress", "root");
+const progress = new Progress("progress", "root", "normal", 75);
 
 const animationInput = document.getElementById("animation");
 const valueInput = document.getElementById("value");

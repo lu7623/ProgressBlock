@@ -8,17 +8,28 @@
   </head>
   <body>
     <main class="main">
-      <h1>Progress</h1>
-      <div id="root"></div>
-      <form class="controls">
-        <input type="text" id="value" value="33" />
-        <label for="value">Value</label>
-        <div class="error-message"></div>
-        <input type="checkbox" id="animation" />
-        <label for="animation">Animate</label>
-        <input type="checkbox" id="hide" />
-        <label for="hide">Hide</label>
-      </form>
+      <h1 class="heading">Progress</h1>
+      <div class="container">
+        <div id="root"></div>
+        <div class="form-container">
+          <form class="controls">
+            <div class="control">
+              <input type="text" id="value" value="75" class="text-input" />
+              <label for="value">Value</label>
+
+              <span class="error-message"></span>
+            </div>
+            <div class="control">
+              <input type="checkbox" id="animation" class="toggle-button" />
+              <label for="animation">Animate</label>
+            </div>
+            <div class="control">
+              <input type="checkbox" id="hide" class="toggle-button" />
+              <label for="hide">Hide</label>
+            </div>
+          </form>
+        </div>
+      </div>
     </main>
     <script type="module" src="index.js"></script>
   </body>

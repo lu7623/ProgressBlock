@@ -11,8 +11,8 @@ export class ProgressElement {
     block.id = id;
     block.classList.add("circle");
     block.classList.add(state);
-    block.innerText = value;
     root.append(block);
+    document.documentElement.style.setProperty("--value", `${value}%`);
     return block;
   }
 
@@ -22,6 +22,9 @@ export class ProgressElement {
     }
 
     this.block.classList.add(progressState.state);
-    this.block.innerText = progressState.value;
+    document.documentElement.style.setProperty(
+      "--value",
+      `${progressState.value}%`
+    );
   }
 }
