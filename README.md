@@ -18,11 +18,11 @@
 ```
 const progress = new Progress(id, parent_id, initial_state, initial_value);
 ```
-Где параметры конструктора:
-`id` - id блока на странице
-`parent_id` - id контейнера, в который будет отрендерен блок (по дефолту body)
-`initial_state` - начальное состояние блока - одно из 'normal'|'animated'|'hidden'
-`initial_value` - начальное значение value (целое число от 0 до 100)
+Где параметры конструктора:   
+`id` - id блока на странице;    
+`parent_id` - id контейнера, в который будет отрендерен блок (по дефолту body);   
+`initial_state` - начальное состояние блока - одно из значений `"normal" | "animated" | "hidden"`;    
+`initial_value` - начальное значение value (целое число от 0 до 100). 
 
 Методы:
 ```
@@ -32,9 +32,23 @@ progress.updateProgressValue(value)
 ```
 progress.updateProgressState(state)
 ```
-позволяет передать новое состояние State (одно из 'normal'|'animated'|'hidden')
+позволяет передать новое состояние State (одно из значений `"normal" | "animated" | "hidden"`)
+
+## Технологии
+- JS без библиотек и фреймворков;
+- SASS;
+- HTML;
+- Сборщик Webpack.
 
 ## Запуск приложения
+Склонируйте репозиторий командой 
+```
+git clone https://github.com/lu7623/ProgressBlock.git
+```
+Установите зависимости 
+```
+npm install
+```
 Для запуска dev сервера на 9000 порту воспользуйтесь командой 
 ```
 npm run serve
@@ -43,3 +57,6 @@ npm run serve
 ```
 npm run build
 ```
+
+## Ссылка на деплой 
+https://lu7623.github.io/ProgressBlock/
