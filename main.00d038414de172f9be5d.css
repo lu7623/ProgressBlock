@@ -57,6 +57,8 @@ input[type="text"] {
   outline: none;
   box-shadow: none;
   border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
 }
 
 .main {
@@ -187,9 +189,9 @@ input[type="text"] {
   top: -40px;
 }
 
-.text-input:active.error,
-.text-input:focus.error,
-.text-input.error {
+#value:active.error,
+#value:focus.error,
+#value.error {
   border: 1.5px solid red;
 }
 
